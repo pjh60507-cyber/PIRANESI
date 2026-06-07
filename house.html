@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The House · 궁전 — PIRANESI</title>
+  <meta name="description" content="피라네시의 집. 빛이 스미는 무한한 홀과 조수에 잠긴 계단." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav nav--scrolled">
+    <a href="index.html" class="nav__brand">피라네시</a>
+    <ul class="nav__links">
+      <li><a href="house.html" aria-current="page">The House</a></li>
+      <li><a href="journal.html">The Journal</a></li>
+      <li><a href="index.html#author">Author</a></li>
+      <li><a href="index.html#trailer">Trailer</a></li>
+    </ul>
+    <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer" class="nav__cta">책 구매하기</a>
+    <button class="nav__toggle" aria-label="메뉴 열기">MENU</button>
+  </nav>
+
+  <main>
+    <!-- ===== HOUSE HERO ===== -->
+    <section class="house-hero container">
+      <span class="eyebrow" data-reveal>The House · 궁전</span>
+      <h1 data-reveal data-delay="1">PIRANESI HOUSE</h1>
+      <p class="intro__text" data-reveal data-delay="2" style="margin-top:1.5rem">
+        위로는 빛이 쏟아지는 끝없는 홀, 아래로는 조수에 잠긴 계단. 이 집은 시작도 끝도 없다.
+      </p>
+    </section>
+
+    <!-- ===== STACKED GALLERY ===== -->
+    <section class="section container" style="padding-top:0">
+      <div class="gallery-stack">
+        <figure data-reveal>
+          <img src="assets/img/hall-birds.png" alt="새들이 날아오르는 상층의 홀" />
+          <figcaption><span>The Upper Halls</span><span>제 03 전당 · 하늘을 바라보는 홀</span></figcaption>
+        </figure>
+        <figure data-reveal>
+          <img src="assets/img/hall-statue.png" alt="옥좌에 앉은 조각상과 폭포" />
+          <figcaption><span>The Drowned Stair</span><span>제 08 전당 · 사라진 기록의 자리</span></figcaption>
+        </figure>
+        <figure data-reveal>
+          <img src="assets/img/hall-chains.png" alt="사슬이 드리운 대운하의 홀" />
+          <figcaption><span>The Grand Canal</span><span>제 12 전당 · 조수가 드나드는 회랑</span></figcaption>
+        </figure>
+        <figure data-reveal>
+          <img src="assets/img/hall-waterfall.png" alt="물에 잠긴 폭포의 홀" />
+          <figcaption><span>The Flooded Vestibule</span><span>제 21 전당 · 조수가 가장 먼저 닿는 곳</span></figcaption>
+        </figure>
+      </div>
+      <!-- 다음 챕터로 연결 -->
+      <div style="text-align:center; margin-top:clamp(3rem,7vw,5rem)" data-reveal>
+        <a href="journal.html" class="btn btn--ghost">다음 — The Journal · 기록 →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wordmark">PIRANESI</div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="house.html">The House · 궁전</a>
+          <a href="journal.html">The Journal · 기록</a>
+          <a href="index.html#author">Author · 작가</a>
+          <a href="index.html#trailer">Trailer · 트레일러</a>
+        </div>
+        <div class="footer__col">
+          <h4>Buy</h4>
+          <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer">교보문고</a>
+        </div>
+        <div class="footer__col">
+          <h4>Watch</h4>
+          <a href="https://www.youtube.com/watch?v=UggPg6CHNbs" target="_blank" rel="noopener noreferrer">북 트레일러 (YouTube)</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Piranesi House. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://www.youtube.com/watch?v=UggPg6CHNbs" target="_blank" rel="noopener noreferrer" class="link">YouTube</a>
+          <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer" class="link">Kyobo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Journal · 기록 — PIRANESI</title>
+  <meta name="description" content="모든 홀에는 하나의 기록이 남겨져 있다. 기록을 따라 궁전의 비밀을 탐험하라." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="dive-veil" aria-hidden="true"></div>
+
+  <!-- ===== NAV (히어로가 어두우므로 상단 밝은 글자) ===== -->
+  <nav class="nav nav--hero-dark">
+    <a href="index.html" class="nav__brand">피라네시</a>
+    <ul class="nav__links">
+      <li><a href="house.html">The House</a></li>
+      <li><a href="journal.html" aria-current="page">The Journal</a></li>
+      <li><a href="index.html#author">Author</a></li>
+      <li><a href="index.html#trailer">Trailer</a></li>
+    </ul>
+    <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer" class="nav__cta">책 구매하기</a>
+    <button class="nav__toggle" aria-label="메뉴 열기">MENU</button>
+  </nav>
+
+  <!-- ===== JOURNAL HERO (마커) ===== -->
+  <header class="hero hero--dark">
+    <img class="hero__bg" data-parallax="0.25" src="assets/img/hall-birds.png" alt="홀로 선 인물이 바라보는 빛의 홀" />
+    <div class="journal-markers">
+      <!-- 각 마커 = 클릭 시 해당 홀로 '빨려들어가는' 다이브. href는 JS 미동작 시 폴백 -->
+      <a class="marker" href="#hall-14" data-target="#hall-14" style="top:50%; left:18%">
+        <span class="marker__no">제 03 전당</span>
+        <p class="marker__name">조각상들이<br />하늘을 바라보는 홀</p>
+        <span class="marker__dot"></span>
+      </a>
+      <a class="marker marker--hide-sm" href="#hall-27" data-target="#hall-27" style="top:64%; left:32%">
+        <span class="marker__no">제 08 전당</span>
+        <p class="marker__name">사라진 기록이<br />발견된 장소</p>
+        <span class="marker__dot"></span>
+      </a>
+      <a class="marker" href="#hall-48" data-target="#hall-48" style="top:40%; left:74%">
+        <span class="marker__no">제 21 전당</span>
+        <p class="marker__name">조수가 가장 먼저<br />도달하는 곳</p>
+        <span class="marker__dot"></span>
+      </a>
+      <a class="marker marker--hide-sm" href="#hall-27" data-target="#hall-27" style="top:62%; left:68%">
+        <span class="marker__no">제 12 전당</span>
+        <p class="marker__name">새들이 머무는<br />회랑</p>
+        <span class="marker__dot"></span>
+      </a>
+    </div>
+    <div class="hero__inner">
+      <span class="eyebrow">The Journal · 기록</span>
+      <h1 class="hero__title" style="font-size:clamp(1.9rem,4.6vw,3.6rem); letter-spacing:.04em; font-weight:600">모든 홀에는<br />하나의 기록이 남겨져 있다.</h1>
+      <p class="hero__sub">기록을 따라 궁전의 비밀을 탐험하라.</p>
+    </div>
+    <div class="hero__scroll">Explore</div>
+  </header>
+
+  <!-- ===== SCROLL HALLS (밝은 신성 톤) ===== -->
+  <main>
+    <section class="hall" id="hall-14">
+      <img class="hall__bg" src="assets/img/hall-statue.png" alt="빛이 스며드는 홀" />
+      <div class="hall__inner" data-reveal>
+        <div class="hall__no">14</div>
+        <p class="hall__line">14번째 홀.<br />오늘은 폭우가 쏟아져, 물이 조금씩 차오르기 시작했다.</p>
+      </div>
+    </section>
+    <section class="hall" id="hall-27">
+      <img class="hall__bg" src="assets/img/hall-birds.png" alt="새들이 날아오르는 홀" />
+      <div class="hall__inner" data-reveal>
+        <div class="hall__no">27</div>
+        <p class="hall__line">27번째 홀.<br />앨버트로스 한 마리가 날아오른다. 봄이 머지않았다.</p>
+      </div>
+    </section>
+    <section class="hall" id="hall-48">
+      <img class="hall__bg" src="assets/img/hall-chains.png" alt="사슬이 드리운 대운하" />
+      <div class="hall__inner" data-reveal>
+        <div class="hall__no">48</div>
+        <p class="hall__line">48번째 홀.<br />물고기를 잡기 좋은 장소를 발견했다. 조수를 기록해 둔다.</p>
+      </div>
+    </section>
+
+    <!-- 다음 연결 -->
+    <section class="section container" style="text-align:center">
+      <span class="eyebrow" data-reveal>Continue</span>
+      <h2 class="intro__title" data-reveal data-delay="1">기록의 끝에서<br />무엇을 마주하게 될까.</h2>
+      <div data-reveal data-delay="2" style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem">
+        <a href="house.html" class="btn btn--ghost">← The House · 궁전</a>
+        <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer" class="btn btn--solid">책으로 마저 읽기 →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wordmark">PIRANESI</div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="house.html">The House · 궁전</a>
+          <a href="journal.html">The Journal · 기록</a>
+          <a href="index.html#author">Author · 작가</a>
+          <a href="index.html#trailer">Trailer · 트레일러</a>
+        </div>
+        <div class="footer__col">
+          <h4>Buy</h4>
+          <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer">교보문고</a>
+        </div>
+        <div class="footer__col">
+          <h4>Watch</h4>
+          <a href="https://www.youtube.com/watch?v=UggPg6CHNbs" target="_blank" rel="noopener noreferrer">북 트레일러 (YouTube)</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Piranesi House. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://www.youtube.com/watch?v=UggPg6CHNbs" target="_blank" rel="noopener noreferrer" class="link">YouTube</a>
+          <a href="https://product.kyobobook.co.kr/detail/S000001029413" target="_blank" rel="noopener noreferrer" class="link">Kyobo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
